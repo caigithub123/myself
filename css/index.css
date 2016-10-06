@@ -1,0 +1,234 @@
+*{margin:0;padding:0;}
+html,body{width:100%;height:100%;}
+.main{width:100%;height:auto ;}
+/*==========home==============*/
+.home{width:100%;height:650px;position:relative;font-size:0;overflow:hidden;}
+.home .lunbo{width:100%;height:100%;position: relative;}
+.home .lunbo img{position:absolute;left:0;top:0;background-size:100% 100%;opacity: 0;transition:1.8s all linear;}
+.home img.bg{width:100%;height:100%;opacity:1;}
+
+
+.home .me{position:absolute;top:30%;left:43%;animation:Meanimation 10s infinite;}
+@keyframes Meanimation{
+	from{transform:rotate(0deg);}
+	25%{transform:rotate(50deg);}
+	50%{transform:rotate(0deg);}
+	75%{transform:rotate(-70deg);}
+	to{transform:rotate(0deg);}
+}
+.home .me img{width:100%;height:100%;border-radius:50%;box-shadow:0 0 5px white;}
+.box{width:50%;height:8%;position:absolute;top:8%;left:45%;z-index:1;}
+.link{width:16%;height:100%;float:left;margin-left:4%;}
+.link .button{position:relative;display:block;height:100%;font-size:1rem;font-weight:bold;border:2px solid transparent;text-decoration:none;text-align:center;line-height:50px;
+				color:white;transition:0.4s all ease;}
+.button:hover{border:2px solid rgba(255,255,255,1);color:#e1f2c3;}
+.button span{position:absolute;background:none;transition:0.4s all ease;}
+.button:hover span{background:#fff;}
+.button .line-top{width:0;height:2px;left:-80px;top:-2px;}
+.button:hover .line-top{width:100%;left:-2px;}
+.button .line-right{width:2px; height:0px;top:-50px;right:-2px;}
+.button:hover .line-right{height:100%;top:-2px;}
+.button .line-bottom{width:0;height:2px;right:-60px;bottom:-2px;}
+.button:hover .line-bottom{width:100%;right:-2px;}
+.button .line-left{width:2px;height:0;bottom:-80px;left:-2px;}
+.button:hover .line-left{height:100%;bottom:-2px;}
+.home .word{position:absolute;top:65%;left:28%;}
+.home .word span{font-size:4rem ;color:white;font-family:'黑体';font-weight:bold;}
+.home .word p{color:white;font-size:3rem;margin-left:13%;}
+/*========person===========*/
+.person{width:100%;height:647px;position:relative;background:#344a62;overflow:hidden;}
+.person span{position: relative;cursor:pointer;color:white;font-size:2.5rem;text-shadow:0 0 5px black;display:block;width:20%;height:10%;text-align:center;margin-left:40%;margin-top:1%;margin-bottom:5%;}
+.person span p{font-size:1.2rem;}
+.person span:before{position:absolute;left:0%;bottom:-20%;content:"";width:30%;border:1px solid #ccc;transform:rotate(180deg);}
+.person span:after{position:absolute;right:0%;bottom:-20%;content:"";width:30%;border:1px solid #ccc;transform:rotate(180deg);}
+.team{position: absolute;top:30%;left:10%;width:80%;height:60%;}
+/*singer*/
+.singer{width:25%;float:left;margin:5% 3.5%;background-color:rgba(255,255,255,0.7);text-align:center;position:relative;}
+.singer:hover{box-shadow:0 0 10px white;}
+.member-image img{max-width: 100%; vertical-align: middle;}
+.member-info h3{display:inline-block;font-size:1rem; font-weight:normal; margin: 1% 0 0; text-transform: uppercase;/*单词全是大写*/}
+.member-info h5{font-size:0.9rem; font-weight:normal; margin: 0 0 5%; line-height: 22px;}
+.member-info p{display:inline-block;font-size:1rem;line-height: 22px; padding: 0 10%; margin-bottom: 20%;}
+/*effect-1*/
+.effect-1{border-radius:3% 3% 0 0; padding-bottom:4%;height:68%;}
+.effect-1 .member-image{border:2px solid #fff;border-radius:50% 0;
+	margin-top:-30%;overflow:hidden;transition:0.3s;display:inline-block;}
+.effect-1 .member-image img{transition: 0.3s; border-radius:10% 0;width:100%;}
+.effect-1 .social-touch{background-color: #e13157;position:absolute;
+	bottom:0;left:0;height:3%;overflow:hidden;padding:2% 0 0;
+	width:100%;transition:0.3s;}
+.effect-1:hover .member-image{border-color: #e13157;border-radius:50%;}
+.effect-1:hover .social-touch{padding: 6px 0; height:10%;}
+/*effect-2*/
+.effect-2{overflow:hidden;height:78%;}
+.effect-2 h3{padding-top:10%; line-height: 33px;}
+.effect-2 .member-image{border-bottom: 5px solid #1fb554; height:65%;overflow:hidden;}
+.effect-2 .member-info{transition: 0.4s;}
+.effect-2 .member-image img{width:100%;vertical-align: bottom;}
+.effect-2 .social-touch{background-color:#1fb554; float: left; left: 0; bottom:100%; overflow: hidden; padding: 5px 0; width: 100%; transition: 0.4s;}
+.effect-2:hover .member-image{height:30%; transition: 0.4s;}
+/*effect-3*/
+.effect-3{height:78%;overflow:hidden;}
+.effect-3 h3{padding-top:7%; line-height: 33px;}
+.effect-3 h5{color:#e5642b;line-height:30px;}
+.effect-3 .member-image{border-bottom: 5px solid #e5642b; transition: 0.4s;height:70%; width: 100%;display: inline-block;float: none; vertical-align: middle;}
+.effect-3 .member-image img{width:100%;vertical-align: bottom;}
+.effect-3 .social-touch{background-color: #e5642b;float: left; left: 0; bottom: 0; overflow: hidden; padding: 5px 0; width: 100%;}
+.effect-3:hover .member-image{border-bottom: 0; border-radius: 0 0 50px 50px; height: 81px; display: inline-block; overflow: hidden; width: 109px;}
+
+/*=============skill=============*/
+.skill{width:100%;height:647px;position: relative;background:rgba(111,120,173,0.3);}
+.skill span{cursor:pointer;position:absolute;top:1%;left:42%;color:gray;font-size:2.5rem;display:inline-block;width:15%;height:10%;text-align:center;}
+.skill span p{font-size:1.2rem;}
+.skill span:before{position:absolute;left:-10%;bottom:-20%;content:"";width:40%;border:1px solid gray;transform:rotate(180deg);}
+.skill span:after{position:absolute;right:-10%;bottom:-20%;content:"";width:40%;border:1px solid gray;transform:rotate(180deg);}
+.skill ul{position:absolute;left:25%;top:20%;width:50%;height:21%;}
+.skill ul li{text-shadow:0 0 2px black;cursor:pointer;float:left;width:130px;height:130px;text-align:center;line-height:130px;color:white;font-size:1.5rem;margin-left:3%;border-radius:50%;}
+.skill ul li.cur{background:#45506e;color:white;font-weight: bold;}
+.skill ul li:hover{text-decoration:underline;}
+.skill #tab_content{overflow: hidden;width:45%;border:1px solid #9c7e62;position:absolute;top:42%;left:28%;perspective:1200px;transition:height 0.3s ease-in 0.3s;}
+.skill #tab_content .content{position: absolute;top:0;left:0;padding:20px;opacity:0;animation-duration:0.3s;animation-timing-function:ease-in;animation-fill-mode:forwards;}
+.skill #tab_content .content.disapper{animation-name:disapper;}
+.skill #tab_content .content.show{animation-name:show;animation-delay:0.3s;/*延迟执行动画*/}
+@keyframes disapper{
+	from{transform:translateX(0);opacity:1;}
+	to{transform:translateX(-100%);opacity:0}
+}
+@keyframes show{
+	from{transform:translateX(100%);opacity:0;}
+	to{transform:translateX(0);opacity:1}
+}
+.skill #tab_content .init{opacity:1;}
+.skill #tab_content .content img{margin-right:20px;float:left;width:30%;height:100%;}
+.skill #tab_content .content p{font-family: "宋体";padding:20px;font-size:1.2rem;text-indent:2rem;}
+/*============photo==============*/
+.photo{width:100%;height:647px;position:relative;}
+.photo span{position:absolute;top:5%;left:42%;color:white;font-size:2.5rem;display:inline-block;width:15%;height:10%;text-align:center;}
+.photo span p{font-size:1.2rem;}
+.photo span:before{position:absolute;left:-15%;bottom:-20%;content:"";width:40%;border:1px solid white;transform:rotate(180deg);}
+.photo span:after{position:absolute;right:-15%;bottom:-20%;content:"";width:40%;border:1px solid white;transform:rotate(180deg);}
+
+.photo .photo_bg{width:100%;height:100%;}
+.photo .photo_bg img{width:100%;height:100%;}
+#stage{
+	width:70%;height:80%;
+	position: absolute;
+	top:0;left:0;right:0;bottom:10%;margin:auto;
+	border-radius:20px;
+	perspective:800px;
+	perspective-origin:50% 20%;/*视角*/
+}
+#container{
+	width:22%;height:30%;
+	position:absolute;
+	top:0;left:0;right:0;bottom:0;margin:auto;
+	transform-style:preserve-3d;
+	transition:transform 2s linear;
+	cursor: pointer;
+}
+
+#container img{width:100%;height:100%;position:absolute;bottom:0;border:3px solid rgba(255,255,255,0.6);}
+
+/*===========contact===============*/
+.contact{width:100%;height:647px;position:relative;font-size:0;}
+.contact img.bg{width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:-1;}
+.contact span{position:absolute;top:5%;left:42%;color:white;font-size:2.5rem;display:inline-block;width:15%;height:10%;text-align:center;cursor:pointer;}
+.contact span p{font-size:1.2rem;}
+.contact span:before{position:absolute;left:-15%;bottom:-20%;content:"";width:40%;border:1px solid white;transform:rotate(180deg);}
+.contact span:after{position:absolute;right:-15%;bottom:-20%;content:"";width:40%;border:1px solid white;transform:rotate(180deg);}
+.call{width:25%;height:35%;position:absolute;top:35%;left:15%;background:#6a6562;border-radius:20px;color:#ccc;box-shadow:0 0 5px white;}
+.call p{font-size:1.7rem;font-weight:bold;margin-left:5%;margin-top:5%;}
+.call ul{width:100%;height:80%;margin-left:5%;margin-top:5%;}
+.call ul li{height:20%;font-size:1.2rem;}
+form{width:42%;height:60%;position:absolute;top:30%;right:15%;}
+form ul{margin-left:10%;margin-top:5%;width:80%;height:90%;}
+form ul li{width:100%;font-size:1rem;margin-top:0%;height:15%;}
+form ul li input{color:black;width:50%;background-color:#aba5a6;border:none;height:60%;border-radius:2%;}
+form ul .end{margin-top:20%;}
+form ul li .message{width:80%;height:200%;}
+form ul li .fasong,form ul li .reset{width:20%;}
+form ul li .reset{margin-left:5%;}
+
+
+.contact .totop{position:fixed;right:0;bottom:0;}
+@media(min-width:900px) and (max-width: 1200px){
+	.person .xinxi ul li{font-size:1rem;}
+	.person .effect-2 .member-image img,.person .effect-3 .member-image img{height:214px;}
+	.skill ul{width:80%;left:20%;}
+	.skill ul li{width:16%;font-size:1.2rem;height:90%;line-height:110px;}
+	
+}
+@media(min-width:480px) and (max-width:900px){
+	/*html{font-size:14px;}*/
+	.home .me{left:35%;}
+	.home .box{width:100%;top:7%;left:0%;}
+	.home .word{position:absolute;top:65%;left:15%;}
+	.home .word span{font-size:2.7rem;}
+	@keyframes spanAnimationShow{
+		from{opacity:0;font-size:0rem;}
+		to{opacity:1;font-size:2rem;font-weight:bold;}
+	}
+	.home .word p{font-size:1.5rem;margin-left:10%;}
+	.person span{height:6%;padding-top:0.5%;box-sizing:border-box;font-size:1.5rem;margin-left:40%;width:20%;}
+	.person .effect-2 .member-image img,.person .effect-3 .member-image img{height:214px;}
+	.person .singer .member-info p{font-size:0.8rem;}
+	.person .effect-1 .member-info p{line-height:18px;}
+	.person .effect-2 .member-info p{margin-top:16%;line-height:15px;}
+	.person .effect-3 .member-info p{margin-top:16%;line-height:14px;}
+	.skill span{height:6%;width:20%;padding-top:0.5%;box-sizing:border-box;font-size:1.5rem;}
+	.skill ul{left:15%;width:80%;}
+	.skill ul li{width:18%;font-size:1.2rem;height:80%;line-height:100px;}
+	.contact span{height:6%;width:20%;padding-top:0.5%;box-sizing:border-box;font-size:1.5rem;}
+	.photo span{height:6%;width:20%;padding-top:0.3%;box-sizing:border-box;font-size:1.5rem}
+	.call{width:40%;left:5%;}
+	.call p,.call ul li{font-size:1rem;}
+	.contact form{font-size:1rem;width:45%;left:50%;}
+	.contact form ul .end{margin-top:50%;}
+
+}
+@media(max-width:480px){
+	html{font-size:0.3rem}
+	.home .me{left:25%;width:50%;top:40%;}
+	.home .box{width:100%;top:5%;left:25%;}
+	.home .box .link{clear:both;height:50%;width:40%;margin-top:2%;}
+	.home .box .link .button{line-height:25px;font-size:2.4rem;}
+	.home .word{top:75%;left:15%;}
+	.home .word span{font-size:4.5rem;}
+	.person{width:100%;height:1000px;}
+	.person span{height:4%;padding-top:5%;font-size:3rem;margin-left:40%;width:20%;}
+	.person span p{font-size: 2.5rem;line-height:20px}
+	.person span:before{bottom:10%;left:-20%;}
+	.person span:after{bottom:10%;right:-20%;}
+	.person .singer{width:80%;height:40%;margin-left:10%;}
+	.person .team{top:15%;}
+	.person .singer .member-info h3{font-size:3rem;}
+	.person .singer .member-info h5{font-size:2.5rem;}
+	.person .singer .member-info p{font-size:2.5rem;line-height:15px;margin-top:-3%;}
+	.person .effect-3 h5{margin-top:-5%;}
+	.skill{width:100%;}
+	.skill span{height:6%;width:20%;padding-top:3%;box-sizing:border-box;font-size:3rem;}
+	.skill span p{font-size: 2.5rem;line-height:20px}
+	.skill span:before{bottom:0%;left:-20%;}
+	.skill span:after{bottom:0%;right:-20%;}
+	.skill ul{width:100%;left:0%;top:15%;}
+	.skill ul li{border-radius:0;width:40%;font-size:3rem;height:25%;line-height:30px;margin-left:30%;}
+	.skill #tab_content .content p{font-size:2rem;padding:10px;}
+	.skill #tab_content .content img{margin:0;height:150px;width:100px;float:left;}
+	.photo{height:550px;}
+	.photo span,.contact span{height:6%;width:30%;padding-top:0%;box-sizing:border-box;font-size:4rem;left:35%;}
+	.photo span p{font-size: 2.5rem;line-height:10px}
+	.photo span:before{bottom:0%;left:-20%;}
+	.photo span:after{bottom:0%;right:-20%;}
+	#stage{width:90%;height:70%;}
+	#stage #container{width:25%;height:30%;}
+	.contact{width:100%;height:800px;}
+	.contact span p{font-size: 2.5rem;line-height:20px}
+	.contact span:before{bottom:10%;left:-20%;}
+	.contact span:after{bottom:10%;right:-20%;}
+	.contact .call{width:80%;top:20%;left:0;height:20%;margin-left:8%;font-size:3rem;}
+	.contact .call p{font-size: 4rem;margin-left:8%;}
+	.contact .call ul li{font-size:2.5rem;margin-top:5%;margin-left:8%;}
+	.contact form{width:80%;top:45%;height:55%;left:10%;}
+	.contact form input{font-size:3rem;}
+	.contact form ul .end{margin-top:50%;}
+}
